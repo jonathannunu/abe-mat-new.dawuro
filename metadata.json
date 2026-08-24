@@ -1,0 +1,6 @@
+{
+  "name": "New Dawuro Foundation",
+  "description": "Official website for New Dawuro Foundation - empowering communities, supporting education with 'One Pack for One Child', clean water, healthcare, agriculture, and elderly care in Dawuro Zone, Ethiopia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
