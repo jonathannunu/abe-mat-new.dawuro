@@ -327,14 +327,14 @@ export const NEWS_ARTICLES: NewsArticle[] = [
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: 'director-1',
-    name: 'Wondwossen Tadesse',
+    name: 'Yonatan Melaku',
     roleEn: 'Executive Director & Co-Founder',
     roleAm: 'ሥራ አስፈፃሚ ዳይሬክተር እና መስራች',
-    bioEn: 'Community organizer passionate about education equity and sustainable development in Dawuro Zone.',
-    bioAm: 'በዳውሮ ዞን በትምህርት እኩልነት እና በዘላቂ ልማት ላይ የሚሰራ የማህበረሰብ አስተባባሪ።',
-    photoUrl: '/images/placeholders/placeholder_team_avatar.svg',
-    altEn: 'Executive Director Wondwossen Tadesse official leadership profile icon',
-    altAm: 'ሥራ አስፈፃሚ ዳይሬክተር ወንድወሰን ታደሰ ይፋዊ የመሪነት ማሳያ',
+    bioEn: 'Community organizer and founder leading educational equity, One Pack for One Child campaigns, and sustainable development across Dawuro Zone.',
+    bioAm: 'በዳውሮ ዞን በትምህርት እኩልነት፣ በአንድ እሽግ ለአንድ ልጅ ዘመቻ እና በዘላቂ ልማት ላይ የሚሰሩ ዋና ሥራ አስፈፃሚና የማህበረሰብ አስተባባሪ።',
+    photoUrl: '/images/gallery/one_pack_distribution_real.jpg',
+    altEn: 'Executive Director Yonatan Melaku official leadership profile',
+    altAm: 'ሥራ አስፈፃሚ ዳይሬክተር ዮናታን መላኩ ይፋዊ የመሪነት ማሳያ',
     phone: '+251917411711',
     email: 'newdawuromedia@gmail.com'
   },

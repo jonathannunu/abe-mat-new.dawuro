@@ -187,7 +187,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ setActiveRoute, onOpenDona
                 <img
                   src={m.photoUrl}
                   alt={m.name}
-                  className="w-24 h-24 rounded-full mx-auto object-cover ring-4 ring-amber-100 dark:ring-slate-800 shadow"
+                  className="w-24 h-24 rounded-full mx-auto object-cover object-top ring-4 ring-amber-400/40 dark:ring-amber-400/30 shadow-md"
                   referrerPolicy="no-referrer"
                 />
                 <div>

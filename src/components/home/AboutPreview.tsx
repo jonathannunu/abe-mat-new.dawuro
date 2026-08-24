@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { PageRoute } from '../../types';
 import { Target, Compass, Sparkles, ShieldCheck, ArrowRight, BookOpen } from 'lucide-react';
+import realDistributionImg from '../../assets/images/one_pack_distribution_real_1787408058911.jpg';
 
 export const AboutPreview: React.FC<{ setActiveRoute: (route: PageRoute) => void }> = ({ setActiveRoute }) => {
   const { t } = useLanguage();
+  const [imgSrc, setImgSrc] = useState<string>(realDistributionImg || '/images/campaigns/one_pack_distribution_real.jpg');
 
   return (
     <section className="py-20 bg-slate-50 dark:bg-slate-950 relative overflow-hidden transition-colors">
@@ -13,21 +15,23 @@ export const AboutPreview: React.FC<{ setActiveRoute: (route: PageRoute) => void
           
           {/* Image & Vision Badge Visual Stack */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800 bg-slate-900 group">
               <img
-                src="/images/campaigns/one_pack_distribution_real.jpg"
+                id="about-preview-main-img"
+                src={imgSrc}
+                onError={() => setImgSrc('/images/campaigns/one_pack_distribution_real.jpg')}
                 alt={t('heroRealAlt')}
-                className="w-full h-[400px] sm:h-[480px] object-cover object-top hover:scale-105 transition-transform duration-700"
+                className="w-full h-[420px] sm:h-[500px] object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
               
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-slate-900/90 backdrop-blur-md text-white border border-slate-700">
                 <span className="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">
-                  OFFICIAL CIVIC NGO
+                  ONE PACK FOR ONE CHILD • CLOSING PROGRAM
                 </span>
-                <p className="text-xs text-slate-200">
-                  Registered civic foundation operating in Tarcha, Gena, Zaba Gazo, and Loma Woredas.
+                <p className="text-xs text-slate-200 leading-relaxed">
+                  Authentic field distribution to rural primary school students in Dawuro Zone.
                 </p>
               </div>
             </div>
